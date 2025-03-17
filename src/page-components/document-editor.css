@@ -1,0 +1,151 @@
+.document-editor-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  height: 100%;
+  min-height: 600px;
+}
+
+.document-editor-content {
+  font-family: "Calibri", "Segoe UI", sans-serif;
+  font-size: 12pt;
+  line-height: 1.5;
+  padding: 2rem;
+  min-height: 29.7cm; /* A4 height */
+  width: 100%;
+  max-width: 21cm; /* A4 width */
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Office-style toolbar */
+.office-style-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px;
+  background-color: #f3f2f1;
+  border-bottom: 1px solid #e1dfdd;
+}
+
+.toolbar-separator {
+  width: 1px;
+  height: 24px;
+  background-color: #c8c6c4;
+  margin: 0 4px;
+}
+
+/* Style for buttons in toolbar */
+.office-style-toolbar button {
+  border-radius: 2px;
+  padding: 4px 8px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #323130;
+}
+
+.office-style-toolbar button:hover {
+  background-color: #edebe9;
+  border-color: #c8c6c4;
+}
+
+.office-style-toolbar button:active {
+  background-color: #e1dfdd;
+  border-color: #8a8886;
+}
+
+/* Status bar at the bottom */
+.document-status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 12px;
+  background-color: #f3f2f1;
+  border-top: 1px solid #e1dfdd;
+  font-size: 12px;
+  color: #605e5c;
+}
+
+/* Headings styling */
+.document-editor-content h1 {
+  font-size: 24pt;
+  color: #2b579a;
+  margin-top: 24pt;
+  margin-bottom: 6pt;
+}
+
+.document-editor-content h2 {
+  font-size: 18pt;
+  color: #2b579a;
+  margin-top: 18pt;
+  margin-bottom: 6pt;
+}
+
+.document-editor-content h3 {
+  font-size: 14pt;
+  color: #2b579a;
+  margin-top: 14pt;
+  margin-bottom: 4pt;
+}
+
+/* Table styling */
+.document-editor-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16pt 0;
+}
+
+.document-editor-content th {
+  background-color: #f3f2f1;
+  border: 1px solid #a19f9d;
+  padding: 8pt;
+  text-align: left;
+  font-weight: bold;
+}
+
+.document-editor-content td {
+  border: 1px solid #a19f9d;
+  padding: 8pt;
+}
+
+/* Code block styling */
+.document-editor-content pre {
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  padding: 16pt;
+  overflow: auto;
+  font-family: "Consolas", "Monaco", monospace;
+}
+
+/* Blockquote styling */
+.document-editor-content blockquote {
+  border-left: 4px solid #c7e0f4;
+  padding-left: 16pt;
+  margin-left: 0;
+  color: #605e5c;
+}
+
+/* Link styling */
+.document-editor-content a {
+  color: #0078d4;
+  text-decoration: underline;
+}
+
+/* List styling */
+.document-editor-content ul,
+.document-editor-content ol {
+  padding-left: 24pt;
+}
+
+.document-editor-content li {
+  margin-bottom: 4pt;
+}
+
